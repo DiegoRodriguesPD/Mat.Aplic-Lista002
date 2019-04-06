@@ -1,0 +1,27 @@
+#Universidade Federal do Rio de Janeiro
+#Aluno: Diego Rodrigues Nascimento
+#DRE: 119106458
+#Curso: Matemática Aplicada
+#Disciplina: Topicos da Matemática Aplicada A
+
+
+print("________________________________________________________________\n")
+print("Aqui vamos calcular o maior fator primo do numero 3852914583882")
+print('Pra obter o calculo digita "ver"')
+print("________________________________________________________________\n")
+
+a=input("Digita ai")
+if a==str('ver'):
+    beta=3852914583882
+    eca=2
+    while beta>1:
+        if beta%eca==0:
+            beta=beta/eca
+        else:
+            while beta%eca!=0:
+                eca+=1
+
+    print("O maior primo de",3852914583882," é :")
+    print("_______")
+    print(eca)
+    print("_______")
