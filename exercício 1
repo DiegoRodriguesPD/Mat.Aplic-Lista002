@@ -1,0 +1,33 @@
+#Universidade Federal do Rio de Janeiro
+#Aluno: Diego Rodrigues Nascimento
+#DRE: 119106458
+#Curso: Matemática Aplicada
+#Disciplina: Topicos da Matemática Aplicada A
+
+
+
+print("_______________________________________________________________\n")
+print("Aqui vamos calcular a soma dos algarismos das potências de 2")
+print('Pra começar, digita qual potência de 2 você quer \n')
+print("_______________________________________________________________\n")
+
+while True:
+    a = int(input("Digita ai "))
+
+    fal = 2 ** a
+    mat = int(0)
+
+    while fal != 0:
+        rat = fal % 10
+        fal = (fal - rat) // 10
+        mat = (mat + rat)
+
+    print("A soma dos algarismos de 2 elevado a", a, " é :")
+    print(".............................................")
+    print(mat)
+    print(".............................................")
+
+    print("Se tu quiser calcular com outra potência")
+    z = str(input("digita 'sim', se não quiser, digita 'nao' "))
+    if z != str('sim'):
+        break
