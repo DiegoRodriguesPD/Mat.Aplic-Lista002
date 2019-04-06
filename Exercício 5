@@ -1,0 +1,101 @@
+#Universidade Federal do Rio de Janeiro
+#Aluno: Diego Rodrigues Nascimento
+#DRE: 119106458
+#Curso: Matemática Aplicada
+#Disciplina: Topicos da Matemática Aplicada A
+
+
+print("___________________________________________________________________")
+print(" Soma e subtração de 2 vetores no enesimo plano R ")
+print('Para iniciar, digite diego() ')
+print('___________________________________________________________________')
+
+
+def soma():
+    vet1 = []
+    vet2 = []
+
+    a = int(input("Os vetores estão em qual plano? "))
+
+
+    for i in range(1, a + 1):
+        i = float(input("Qual a coordenada do vet1 no R" + str(i) + " "))
+        vet1.append(i)
+    print("")
+    print("vet1 =", vet1)
+
+    for i in range(1, a + 1):
+        i = float(input("Qual a coordenada do svet2 no R" + str(i) + " "))
+        vet2.append(i)
+    print("")
+    print("vet2 =", vet2)
+
+    D = []
+    D = [elemvet1 + elemvet2 for elemvet1, elemvet2 in zip(vet1, vet2)]
+
+    print("A soma dos seus vetores é igual a w =", D)
+    print(_________________)
+    print("FIM")
+    print(_________________)
+    diego()
+
+
+def subtracao():
+    vet1 = []
+    vet2= []
+
+    a = int(input("Os vetores estão em qual plano? "))
+
+
+    for i in range(1, a + 1):
+        i = float(input("Qual a coordenada do vet1 no R" + str(i) + " "))
+        vet1.append(i)
+    print("")
+    print("vet1 =", vet1)
+
+    for i in range(1, a + 1):
+        i = float(input("Qual a coordenada do svet2 no R" + str(i) + " "))
+        vet2.append(i)
+    print("")
+    print("vet2 =", vet2)
+
+    D = []
+    D = [elemvet1 - elemvet2 for elemvet1, elemvet2 in zip(vet1, vet2)]
+
+    print("A soma dos seus vetores é igual a w =", D)
+    print(_________________)
+    print("FIM")
+    print(_________________)
+    diego()
+
+
+def opção():
+    print("~" * 25)
+    print("1) Soma de Vetores")
+    print("2) Subtração de Vetores")
+    print("3) Sair da Calculadora")
+    print("~" * 25)
+    oper = int(input("Qual opção você quer? "))
+    if oper == 1:
+        soma()
+
+    elif oper == 2:
+        subtração()
+
+    elif oper == 3:
+        print("Até mais")
+
+
+    else:
+        print("Eopcao invalida")
+        opção()
+    return
+
+    return
+
+
+def calc():
+    print("Olá")
+    print("Digite um numero da operação com qual você quer trabalhar")
+    opção()
+    return
