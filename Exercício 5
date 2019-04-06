@@ -92,7 +92,7 @@ def opção():
     return
 
 
-def calc():
+def diego():
     print("Olá")
     print("Digite um numero da operação com qual você quer trabalhar")
     opção()
