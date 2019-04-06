@@ -87,10 +87,8 @@ def opção():
 
 
     else:
-        print("Eopcao invalida")
+        print("opcao invalida")
         opção()
-    return
-
     return
 
 
