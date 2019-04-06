@@ -1,0 +1,38 @@
+#Universidade Federal do Rio de Janeiro
+#Aluno: Diego Rodrigues Nascimento
+#DRE: 119106458
+#Curso: Matemática Aplicada
+#Disciplina: Topicos da Matemática Aplicada A
+
+
+print("________________________________________________________________________________\n")
+print("Aqui vamos calcular a soma dos numeros impares de uma sequencia de Fibonacci")
+print("cujo valor dos termos na sequência não excedam um parametro escolhido por voce")
+print('Pra começar, escolhe um limite para os valores da sequência \n')
+print("________________________________________________________________________________\n")
+
+while True:
+    a=float(input("Digite um valor limite da sequência "))
+
+    bart=1
+    casa=2
+
+    eca=1
+    diego=0
+    while diego<a:
+        diego=bart+casa
+        bart=casa
+        casa=diego
+        if diego%2!=0:
+            eca=eca+diego
+
+    print("")
+    print("A soma de todos os impares de uma sequencia de Fibonacci cujos valor dos")
+    print("termos não excedam",int(a),"é:")
+    print(eca)
+
+
+    print("Deseja calcular com outra restrição")
+    f=str(input("digita 'sim', se não quiser, digita 'não' "))
+    if f!=str('sim'):
+        break
